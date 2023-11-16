@@ -1,0 +1,10 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+@if (!NavigationManager.Uri.Contains("/login") && !NavigationManager.Uri.Contains("/signup"))
+{
+    <Header />
+}
+<main class="max-w-7xl mx-auto px-8">
+    @Body
+</main>
